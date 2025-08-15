@@ -11,8 +11,7 @@ Sistema completo para gestão de transporte marítimo, incluindo emissão de not
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Funcionalidades](#-funcionalidades)
 - [API](#-api)
-- [Contribuição](#-contribuição)
-- [Licença](#-licença)
+
 
 ## ✨ Características
 
@@ -297,29 +296,6 @@ sistema-gestao-maritima/
 Authorization: Bearer <jwt-token>
 ```
 
-## 🤝 Contribuição
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-### Padrões de Código
-- Use ESLint e Prettier
-- Siga as convenções de nomenclatura do projeto
-- Adicione testes para novas funcionalidades
-- Documente mudanças significativas
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 📞 Contato
-
-- **Projeto**: Sistema de Gestão Marítima
-- **Versão**: 1.0.0
-- **Ano**: 2025
 
 ## 🚨 Troubleshooting
 
@@ -356,4 +332,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para de
 
 ---
 
-**Desenvolvido com ❤️ para o transporte marítimo brasileiro**
+
