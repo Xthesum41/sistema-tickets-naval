@@ -4,22 +4,30 @@
 const formatManausDate = (date) => {
   if (!date) return '---';
   const dateObj = new Date(date);
-  // Ajustar para GMT-4 (Manaus)
-  const manausOffset = -4 * 60; // -4 horas em minutos
-  const utc = dateObj.getTime() + (dateObj.getTimezoneOffset() * 60000);
-  const manausTime = new Date(utc + (manausOffset * 60000));
-  return manausTime.toLocaleDateString('pt-BR');
+  return dateObj.toLocaleDateString('pt-BR', { 
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  });
 };
 
 // Função para formato de data e hora de Manaus
 const formatManausDateTime = (date) => {
   if (!date) return '---';
   const dateObj = new Date(date);
-  // Ajustar para GMT-4 (Manaus)
-  const manausOffset = -4 * 60; // -4 horas em minutos
-  const utc = dateObj.getTime() + (dateObj.getTimezoneOffset() * 60000);
-  const manausTime = new Date(utc + (manausOffset * 60000));
-  return manausTime.toLocaleDateString('pt-BR') + ' ' + manausTime.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+  const dateStr = dateObj.toLocaleDateString('pt-BR', { 
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  });
+  const timeStr = dateObj.toLocaleTimeString('pt-BR', { 
+    timeZone: 'UTC',
+    hour: '2-digit', 
+    minute: '2-digit' 
+  });
+  return `${dateStr} ${timeStr}`;
 };
 
 export const generateTicketPrintContent = (ticketData) => {
