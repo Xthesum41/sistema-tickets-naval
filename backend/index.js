@@ -6,7 +6,8 @@ const PORT = 5000;
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://192.168.15.14:5173'],
+  // add o seu IP aqui 
+  origin: ['http://localhost:5173', 'http://192.168.15.5:5173', 'http://192.168.15.14:5173'],
   credentials: true
 }));
 app.use(express.json());
